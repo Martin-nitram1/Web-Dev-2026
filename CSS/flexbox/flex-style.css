@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header, nav, main, aside, footer {
+  padding: 20px;
+  color: white;
+}
+.header {
+  background-color: darkblue;
+}
+.navbar {
+  background-color: darkcyan;
+}
+.content {
+  background-color: darkgreen;
+  flex: 2;
+}
+.sidebar {
+  background-color: darkred;
+  flex: 1;
+}
+.footer {
+  background-color: darkslategray;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex: 1;

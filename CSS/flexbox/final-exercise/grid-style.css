@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+}
+.gallery-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;  
+}
+.gallery-item:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:  1s ease;
+  animation: Rotate 2s ease-in-out;
+}
+@keyframes Rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  };
+
+  @media (max-width:700px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+  }
+

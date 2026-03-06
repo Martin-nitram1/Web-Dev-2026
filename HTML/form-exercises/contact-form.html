@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder = "Enter your name"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <p>Gender</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>  
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Other information</legend>
+        <p>Hobbies:</p>
+        <input type="checkbox" id="Hobby 1" name="hobbies" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Gaming">
+        <label for="hobby2">Gaming</label><br>
+
+        <label for="Country">Country</label>
+        <select id="country" name="country" required placeholder="Select your Country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Kenya">Kenya</option>
+        </select><br><br> 
+
+        <Label for="Age">Age:</Label>
+        <input type="number" id="age" name="age" required max="30" min="10" step="1"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Final information</legend>
+        <label for="Comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="30" required></textarea><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
