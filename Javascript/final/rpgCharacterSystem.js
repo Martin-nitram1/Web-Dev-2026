@@ -44,3 +44,4 @@ aragorn.getSummary();
 aragorn.levelUp();
 aragorn.getSummary();
 aragorn.takeDamage(25);
+
